@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de productos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/index.html">Logo</a> 
+        </div>
+        <nav>
+            <a href="/listado.html">Listar productos</a>
+            <a href="/carga.html">Cargar productos</a>
+            <a href="/quienesSomos.html">Quienes somos</a>
+    </header>
+    <section class="banner">
+        <h2>Carga de productos</h2>
+        <form action="">
+            <label for="producto">Producto</label>
+            <input type="text" id="producto" name="producto">
+            <hr>
+            <label>Foto</label>
+            <input type="file" id="filePhoto">
+            <hr>
+            <label for="tipoProducto">Tipo de producto</label>
+            <select name="tipoProducto" id="tipoProducto">
+                <option value="">Descripcion1</option>
+                <option value="">Descripcion2</option>
+                <option value="">Descripcion3</option>
+                <option value="">Descripcion4</option>
+            </select>
+            <label for="precio">Precio</label>
+            <input type="text" id="precio" name="precio">
+            <hr>
+            <label for="descripcion">Descripcion</label>
+            <br>
+            <textarea id="descripcion" name="descripcion" rows="10" cols="80"></textarea>
+            <hr>
+            <label >Caracteristicas</label>
+            <br>
+            <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
+            <label for="opcion1"> Opcion1</label><br>
+            <input type="checkbox" id="opcion2" name="opcion2" value="opcion2">
+            <label for="opcion2"> Opcion2</label><br>
+            <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
+            <label for="opcion3"> Opcion3</label><br>
+            <input type="button" value="Aceptar"> 
+        </form>
+    </section>
+    <footer>
+        <div>
+            @Copyright UNTDF & NEWSAN 
+            Supermercado Patagonico
+        </div>
+        <div>
+            Direccion: Maipu 350
+            Whatsapp: 2901-9-635120
+            Telefono: 2901 -446100
+            Horarios: 09:00hrs a 22:00hrs
+        </div>
+    </footer>
+
+
+    
+    
+</body>
+</html>
+<!--   Carga servirá para que una persona encargada de productos pueda cargar la información de un producto, deberá contener los siguientes campos: titulo (input), imágen (file), tipo de producto (select o radio), precio (input), descripcion (textarea), características (check) -->
