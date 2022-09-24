@@ -1,2 +1,2 @@
-Supermercado probando
+Supermercado prueba
 
