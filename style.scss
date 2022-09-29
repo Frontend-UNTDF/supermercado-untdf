@@ -1,0 +1,53 @@
+/*#FFC600 amarillo
+#000000 negro
+#E8E4E3 gris suave
+#E61717 rojo*/
+
+$amarillo:#FFC600;
+$negro:#000000;
+$grisSuave:#E8E4E3;
+$rojo:#E61717;
+
+
+
+.wrapper-productos-titulos{
+    h4{
+        color:$rojo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card{
+
+    img{
+        margin:10px 0px;
+        width: 100px;
+        height: 100px;
+       }
+    p{
+        margin:0px;
+    } 
+    button{
+        margin-bottom: 5px;
+    }
+}  
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:18rem;
+    max-width:18rem;
+    width:12rem;
+}  
+
+.wrapper-productos-titulos{
+    display:flex;
+}
+

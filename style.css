@@ -1,6 +1,40 @@
-.banner{
-    background-image: url('/fotos/banner\ supermercado.jpg') ;
-    background-repeat: no-repeat;
-    width:100%;
-    height: 300px;
+/*#FFC600 amarillo
+#000000 negro
+#E8E4E3 gris suave
+#E61717 rojo*/
+.wrapper-productos-titulos h4 {
+  color: #E61717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.wrapper-productos-titulos .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  margin: 10px 0px;
+  width: 100px;
+  height: 100px;
+}
+.card p {
+  margin: 0px;
+}
+.card button {
+  margin-bottom: 5px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 18rem;
+  max-width: 18rem;
+  width: 12rem;
+}
+
+.wrapper-productos-titulos {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
