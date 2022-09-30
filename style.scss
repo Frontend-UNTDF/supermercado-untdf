@@ -63,7 +63,9 @@ $rojo:#E61717;
     margin:0;
     padding:0;
 }
-.producto{
-    border: 1px solid red;
-    height: 5vh;
+.producto {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }

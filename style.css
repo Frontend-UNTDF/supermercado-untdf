@@ -54,6 +54,8 @@
 }
 
 .producto {
-  border: 1px solid red;
-  height: 5vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
