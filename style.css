@@ -2,6 +2,15 @@
 #000000 negro
 #E8E4E3 gris suave
 #E61717 rojo*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-productos-titulos {
+  display: flex;
+  justify-content: center;
+}
 .wrapper-productos-titulos h4 {
   color: #E61717;
   display: flex;
@@ -37,4 +46,9 @@
 
 .wrapper-productos-titulos {
   display: flex;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

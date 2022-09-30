@@ -8,9 +8,15 @@ $negro:#000000;
 $grisSuave:#E8E4E3;
 $rojo:#E61717;
 
-
+*{
+    margin:0;
+    padding:0;
+}
 
 .wrapper-productos-titulos{
+    display:flex;
+    justify-content: center;
+    
     h4{
         color:$rojo;
         display: flex;
@@ -45,9 +51,14 @@ $rojo:#E61717;
     min-width:18rem;
     max-width:18rem;
     width:12rem;
+   
 }  
 
 .wrapper-productos-titulos{
     display:flex;
+    
 }
-
+.card{
+    margin:0;
+    padding:0;
+}
