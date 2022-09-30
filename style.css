@@ -51,4 +51,9 @@
 .card {
   margin: 0;
   padding: 0;
+}
+
+.producto {
+  border: 1px solid red;
+  height: 5vh;
 }/*# sourceMappingURL=style.css.map */

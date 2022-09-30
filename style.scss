@@ -16,7 +16,7 @@ $rojo:#E61717;
 .wrapper-productos-titulos{
     display:flex;
     justify-content: center;
-    
+
     h4{
         color:$rojo;
         display: flex;
@@ -27,6 +27,7 @@ $rojo:#E61717;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 }
 
@@ -61,4 +62,8 @@ $rojo:#E61717;
 .card{
     margin:0;
     padding:0;
+}
+.producto{
+    border: 1px solid red;
+    height: 5vh;
 }
