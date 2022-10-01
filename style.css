@@ -2,27 +2,23 @@
 #000000 negro
 #E8E4E3 gris suave
 #E61717 rojo*/
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.wrapper-productos-titulos {
-  display: flex;
-  justify-content: center;
-}
-.wrapper-productos-titulos h4 {
-  color: #E61717;
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #1b1919;
 }
-.wrapper-productos-titulos .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card img {
   margin: 10px 0px;
   width: 100px;
@@ -35,27 +31,33 @@
   margin-bottom: 5px;
 }
 
-.card {
+.card-producto {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 18rem;
-  max-width: 18rem;
-  width: 12rem;
+  color: Darklgray;
+  flex-direction: column;
+}
+.card-producto img {
+  margin: 10px 0px;
+  width: 14rem;
+  height: 12rem;
+}
+.card-producto p {
+  margin: 0px;
+  text-align: center;
+}
+.card-producto button {
+  margin-bottom: 5px;
 }
 
-.wrapper-productos-titulos {
-  display: flex;
-}
-
-.card {
-  margin: 0;
-  padding: 0;
-}
-
-.producto {
-  height: 40vh;
+.container h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #666060;
+}
+
+main {
+  background-image: linear-gradient(to bottom right, lightblue, white);
 }/*# sourceMappingURL=style.css.map */
