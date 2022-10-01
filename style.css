@@ -13,22 +13,34 @@
   padding: 0;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: Darklgray;
+}
+
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1b1919;
+  min-width: 12rem;
+  width: 14rem;
+  margin-top: 0.5rem;
+  height: 20rem;
 }
 .card img {
   margin: 10px 0px;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 8rem;
+  margin-top: 2rem;
 }
 .card p {
   margin: 0px;
 }
 .card button {
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
 }
 
 .card-producto {
@@ -40,15 +52,15 @@
 }
 .card-producto img {
   margin: 10px 0px;
-  width: 14rem;
-  height: 12rem;
+  width: 16rem;
+  height: 15rem;
 }
 .card-producto p {
   margin: 0px;
   text-align: center;
 }
 .card-producto button {
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
 }
 
 .container h4 {
@@ -60,4 +72,18 @@
 
 main {
   background-image: linear-gradient(to bottom right, lightblue, white);
+}
+
+footer {
+  background-image: linear-gradient(to bottom right, lightblue, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: Darklgray;
+}
+footer .direccion-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: Darklgray;
 }/*# sourceMappingURL=style.css.map */

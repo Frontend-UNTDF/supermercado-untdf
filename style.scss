@@ -4,52 +4,58 @@
 #E61717 rojo*/
 
 @import 'variables';
-@mixin centrado($color:Darklgray) {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    color:$color;
-}
-@mixin gradiante($colorP: lightblue, $colorS:white){
-    background-image: linear-gradient(to bottom right,$colorP,$colorS)
-}
+
 
 
 *{
     margin:0;
     padding:0;
 }
+
+
+
+.card-container{
+   @include centrado();
+}
 .card{
     @include centrado($color:#1b1919);
+    min-width: 12rem;
+    width:14rem;
+    margin-top: 0.5rem;
+    height:20rem;
+    
         img{
             margin:10px 0px;
-            width: 100px;
-            height: 100px;
+            width: 10rem;
+            height: 8rem;
+            margin-top: 2rem;
            }
         p{
             margin:0px;
         } 
         button{
-            margin-bottom: 5px;
+            margin-bottom: 2rem;
         }
     }  
-    .card-producto{
+
+.card-producto{
         @include centrado();
         flex-direction: column;
+        
             img{
                 margin:10px 0px;
-                width: 14rem;
-                height:12rem;
+                width: 16rem;
+                height:15rem;
                }
             p{
                 margin:0px;
                 text-align: center;
             } 
             button{
-                margin-bottom: 5px;
+                margin-bottom: 2rem;
                 
             }
-        }  
+}  
 
 .container{
     h4{
@@ -58,51 +64,15 @@
 }
 main{
     @include gradiante();
+    
    // background-color: blue;
     
 }
-
-//     h4{
-//         color:$rojo;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     .card-container-promocion{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-        
-//     }
-// }
-
-// 
-// .card{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-width:18rem;
-//     max-width:18rem;
-//     width:12rem;
+footer{
+    @include gradiante();
+    .direccion-redes{
+        @include centrado();
+    }
    
-// }  
 
-// .wrapper-productos-titulos{
-//     display:flex;
-    
-// }
-// .card{
-//     margin:0;
-//     padding:0;
-// }
-// .producto {
-//     height: 40vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items:center;
-// }
-// .wrapper-productos{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+

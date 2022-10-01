@@ -8,3 +8,12 @@ $rojo:#E61717;
     justify-content: center;
     align-items:center ;
 }
+@mixin centrado($color:Darklgray) {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:$color;
+}
+@mixin gradiante($colorP: lightblue, $colorS:white){
+    background-image: linear-gradient(to bottom right,$colorP,$colorS)
+}
