@@ -26,14 +26,14 @@
   align-items: center;
   color: #1b1919;
   min-width: 12rem;
-  width: 14rem;
+  width: 10rem;
+  height: 12rem;
   margin-top: 0.5rem;
-  height: 20rem;
 }
 .card img {
   margin: 10px 0px;
-  width: 10rem;
-  height: 8rem;
+  width: 8rem;
+  height: 6rem;
   margin-top: 2rem;
 }
 .card p {
@@ -76,10 +76,6 @@ main {
 
 footer {
   background-image: linear-gradient(to bottom right, lightblue, white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: Darklgray;
 }
 footer .direccion-redes {
   display: flex;
