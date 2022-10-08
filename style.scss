@@ -12,7 +12,20 @@
     padding:0;
 }
 
+.header-nav{
+ 
+    align-items: center;
+    @include gradiante();
+    font-family: Roboto;
+    font-weight: 500;
+    
+    .logo{
+        margin: 1rem 0 0 1rem;
+        height: 8vh;
+    }
+  
 
+}
 
 .card-container{
    @include centrado();
@@ -33,6 +46,7 @@
            }
         p{
             margin:0px;
+            font-family: 'Roboto', bold;
         } 
         button{
             margin-bottom: 2rem;
@@ -51,6 +65,7 @@
             p{
                 margin:0px;
                 text-align: center;
+                font-family: 'Roboto', bold;
             } 
             button{
                 margin-bottom: 2rem;
@@ -76,4 +91,48 @@ footer{
     }
    
 }
+.direccion-redes{
 
+        .col{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+       
+        h5{
+            margin-bottom: 0;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 500;
+        }
+        p{
+            margin-bottom: 0.2rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 100;
+        }
+  
+  
+}
+
+@media (max-width:428px){
+    .link-nav{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;      
+    }   
+        div{
+            .link{
+                margin-right: 0px!Important;
+                text-align: center!Important;
+                
+            }
+        }
+   .header-nav{
+    .logo{
+        margin-bottom: 0;
+        margin:0.8rem 0 0 0.5rem;
+    }
+   }
+    
+}
