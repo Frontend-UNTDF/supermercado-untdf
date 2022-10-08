@@ -4,23 +4,22 @@
 #E61717 rojo*/
 
 @import 'variables';
+@import './fonts/fonts';
 
 
 
-*{
-    margin:0;
-    padding:0;
+html, body, ul, ol{
+  @include reset();
 }
 
 .header-nav{
  
     align-items: center;
     @include gradiante();
-    font-family: Roboto;
-    font-weight: 500;
-    
+    @include fonts('Roboto-Italic','../fonts/Roboto-Italic.ttf');
+
     .logo{
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 5rem;
         height: 8vh;
     }
   
@@ -29,6 +28,7 @@
 
 .card-container{
    @include centrado();
+   
 }
 .card{
     @include centrado($color:#1b1919);
@@ -47,6 +47,7 @@
         p{
             margin:0px;
             font-family: 'Roboto', bold;
+          
         } 
         button{
             margin-bottom: 2rem;

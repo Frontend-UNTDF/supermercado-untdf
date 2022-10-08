@@ -3,11 +3,11 @@ $negro:#000000;
 $grisSuave:#E8E4E3;
 $rojo:#E61717;
 
-.centrado {
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+@mixin reset(){
+    margin: 0;
+    padding: 0;
 }
+
 @mixin centrado($color:Darklgray) {
     display: flex;
     justify-content:center;
