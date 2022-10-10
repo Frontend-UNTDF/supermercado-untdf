@@ -2,131 +2,181 @@
 #000000 negro
 #E8E4E3 gris suave
 #E61717 rojo*/
-.centrado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.header-nav {
-  align-items: center;
-  background-image: linear-gradient(to bottom right, lightblue, white);
-  font-family: Roboto;
-  font-weight: 500;
+header .nav-wrapper {
+  height: 12vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#E61717), to(#000000));
+  background-image: linear-gradient(to bottom right, #E61717, #000000);
 }
-.header-nav .logo {
-  margin: 1rem 0 0 1rem;
-  height: 8vh;
+
+header .nav-item {
+  margin-right: 2rem;
+}
+
+header .nav-item a {
+  font-weight: 500;
+  color: #E8E4E3;
+}
+
+header .nav-item a:hover {
+  color: #FFC600;
+  border-bottom: 2px solid #FFC600;
+  padding: 2px;
+}
+
+header .logo {
+  margin-left: 2rem;
+}
+
+.banner {
+  height: 30vh;
+}
+
+.carousel-item {
+  height: 25vh;
 }
 
 .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1b1919;
   min-width: 12rem;
   width: 10rem;
   height: 12rem;
   margin-top: 0.5rem;
 }
+
 .card img {
   margin: 10px 0px;
   width: 8rem;
   height: 6rem;
   margin-top: 2rem;
 }
+
 .card p {
   margin: 0px;
-  font-family: "Roboto", bold;
 }
+
 .card button {
   margin-bottom: 2rem;
 }
 
 .card-producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .card-producto img {
   margin: 10px 0px;
   width: 16rem;
   height: 15rem;
 }
+
 .card-producto p {
   margin: 0px;
   text-align: center;
-  font-family: "Roboto", bold;
 }
+
 .card-producto button {
   margin-bottom: 2rem;
 }
 
 .container h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #666060;
 }
 
 main {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(white));
   background-image: linear-gradient(to bottom right, lightblue, white);
 }
 
 footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(white));
   background-image: linear-gradient(to bottom right, lightblue, white);
 }
+
 footer .direccion-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
 }
 
 .direccion-redes .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .direccion-redes h5 {
   margin-bottom: 0;
   text-align: center;
-  font-family: "Roboto";
-  font-weight: 500;
+  font-weight: 700;
 }
+
 .direccion-redes p {
   margin-bottom: 0.2rem;
   text-align: center;
-  font-family: "Roboto";
-  font-weight: 100;
+  font-weight: 500;
 }
-
-@media (max-width: 428px) {
-  .link-nav {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  div .link {
-    margin-right: 0px !important;
-    text-align: center !important;
-  }
-  .header-nav .logo {
-    margin-bottom: 0;
-    margin: 0.8rem 0 0 0.5rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -4,26 +4,50 @@
 #E61717 rojo*/
 
 @import 'variables';
-@import './fonts/fonts';
+// @import './fonts/fonts';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap');
 
 
 
-html, body, ul, ol{
+*{
   @include reset();
-}
+  font-family: 'Inter', sans-serif;
 
-.header-nav{
- 
-    align-items: center;
-    @include gradiante();
-    @include fonts('Roboto-Italic','../fonts/Roboto-Italic.ttf');
-
-    .logo{
-        margin: 1rem 0 0 5rem;
-        height: 8vh;
-    }
   
+}
+header{
+    .nav-wrapper{
+        height:12vh;
+        @include gradiante($rojo,$negro);
+    }
+    .nav-item{
+        margin-right:2rem;
+        a{
+            font-weight: 500;
+            color:$grisSuave;
+        }
+    
+    }
+    .nav-item a:hover{
+        color:$amarillo;
+        border-bottom:2px solid $amarillo;
+        padding:2px;
+    }
+    .logo{
+        margin-left:2rem;
+    }
+}
+.banner{
+    height:30vh;
+    
+}
+.carousel-indicators{
+   
 
+    
+}
+.carousel-item{
+    height:25vh;
 }
 
 .card-container{
@@ -46,7 +70,7 @@ html, body, ul, ol{
            }
         p{
             margin:0px;
-            font-family: 'Roboto', bold;
+        
           
         } 
         button{
@@ -66,7 +90,7 @@ html, body, ul, ol{
             p{
                 margin:0px;
                 text-align: center;
-                font-family: 'Roboto', bold;
+                
             } 
             button{
                 margin-bottom: 2rem;
@@ -103,37 +127,19 @@ footer{
         h5{
             margin-bottom: 0;
             text-align: center;
-            font-family: 'Roboto';
-            font-weight: 500;
+           
+            font-weight: 700;
         }
         p{
             margin-bottom: 0.2rem;
             text-align: center;
-            font-family: 'Roboto';
-            font-weight: 100;
+            font-weight: 500;
         }
   
   
 }
 
 @media (max-width:428px){
-    .link-nav{
-        justify-content: center;
-        display: flex;
-        flex-direction: column;      
-    }   
-        div{
-            .link{
-                margin-right: 0px!Important;
-                text-align: center!Important;
-                
-            }
-        }
-   .header-nav{
-    .logo{
-        margin-bottom: 0;
-        margin:0.8rem 0 0 0.5rem;
-    }
-   }
+  
     
 }
