@@ -15,11 +15,11 @@
 
   
 }
-header{
-    .nav-wrapper{
-        height:12vh;
+nav{
+    
+       
         @include gradiante($rojo,$negro);
-    }
+  
     .nav-item{
         margin-right:2rem;
         a{
@@ -38,17 +38,32 @@ header{
     }
 }
 .banner{
-    height:30vh;
-    
-}
-.carousel-indicators{
-   
+    height:50vh;
 
-    
+    .banner-wrapper{
+        background-color: rgb(158, 158, 158);
+        height:50vh;
+        @include centrado();
+        .banner-texto {
+            h3{
+                font-weight: 700;
+                font-size:2rem;
+            }
+            p{
+                font-weight: 200;
+            }
+           
+        }
+    }
+
 }
-.carousel-item{
-    height:25vh;
+
+
+
+.carousel-indicators{
+ height:2rem; 
 }
+
 
 .card-container{
    @include centrado();
@@ -139,7 +154,21 @@ footer{
   
 }
 
-@media (max-width:428px){
-  
+@media (max-width:992px){
     
+    .nav-item{
+        @include centrado();
+        a  {
+            
+            font-weight: 500;
+            color:$grisSuave;
+            font-size:1.2rem;
+            line-height: 2rem;
+            display:inline;
+        }
+        a :hover{
+            border-bottom: 2px solid $amarillo;
+        }
+    
+    }
 }

@@ -9,37 +9,60 @@
   font-family: 'Inter', sans-serif;
 }
 
-header .nav-wrapper {
-  height: 12vh;
+nav {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#E61717), to(#000000));
   background-image: linear-gradient(to bottom right, #E61717, #000000);
 }
 
-header .nav-item {
+nav .nav-item {
   margin-right: 2rem;
 }
 
-header .nav-item a {
+nav .nav-item a {
   font-weight: 500;
   color: #E8E4E3;
 }
 
-header .nav-item a:hover {
+nav .nav-item a:hover {
   color: #FFC600;
   border-bottom: 2px solid #FFC600;
   padding: 2px;
 }
 
-header .logo {
+nav .logo {
   margin-left: 2rem;
 }
 
 .banner {
-  height: 30vh;
+  height: 50vh;
 }
 
-.carousel-item {
-  height: 25vh;
+.banner .banner-wrapper {
+  background-color: #9e9e9e;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: Darklgray;
+}
+
+.banner .banner-wrapper .banner-texto h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.banner .banner-wrapper .banner-texto p {
+  font-weight: 200;
+}
+
+.carousel-indicators {
+  height: 2rem;
 }
 
 .card-container {
@@ -178,5 +201,30 @@ footer .direccion-redes {
   margin-bottom: 0.2rem;
   text-align: center;
   font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: Darklgray;
+  }
+  .nav-item a {
+    font-weight: 500;
+    color: #E8E4E3;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: inline;
+  }
+  .nav-item a :hover {
+    border-bottom: 2px solid #FFC600;
+  }
 }
 /*# sourceMappingURL=style.css.map */
