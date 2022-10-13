@@ -15,24 +15,36 @@
 
   
 }
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 254, 254, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-toggler{
+    border: 2px solid rgb(255, 254, 254,0.5)!important;
+}
+
 nav{
     
        
         @include gradiante($rojo,$negro);
   
     .nav-item{
-        margin-right:2rem;
+        margin-right:0.5rem;
+       
         a{
+            width:6rem;
             font-weight: 500;
             color:$grisSuave;
+            text-align: center;
+            transition: 0.5s;
+            
         }
     
     }
-    .nav-item a:hover{
-        color:$amarillo;
-        border-bottom:2px solid $amarillo;
-        padding:2px;
-    }
+    .nav-item {
+        a:hover{
+            background-color: $amarillo; 
+        }
+    }   
     .logo{
         margin-left:2rem;
     }
@@ -58,11 +70,15 @@ nav{
 
 }
 
-
-
 .carousel-indicators{
  height:2rem; 
 }
+
+    .promos{
+        margin-top:20px;
+    }
+   
+    
 
 
 .card-container{
@@ -75,6 +91,8 @@ nav{
     width:10rem;
     height:12rem;
     margin-top: 0.5rem;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.20);
+
    
     
         img{
@@ -95,11 +113,13 @@ nav{
 
 .card-producto{
         @include centrado();
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.20);
+        margin-bottom: 20px;
         flex-direction: column;
         
             img{
                 margin:10px 0px;
-                width: 16rem;
+                width: 18rem;
                 height:15rem;
                }
             p{
@@ -118,21 +138,45 @@ nav{
          @include centrado($color:#666060 ); 
     }
 }
-main{
-    @include gradiante();
+
+
+.descuento{
     
-   // background-color: blue;
-    
+    .descuento-img{
+        width:4rem;
+        height:4rem;
+    }
+}
+.descuento:hover{
+    @include cardHover();
+}
+.oferta{
+    .oferta-img{
+        width:4rem;
+        height:4rem;
+    }
+}
+.oferta:hover{
+   @include cardHover();
+}
+.entrega{
+    .entrega-img{
+        width:4rem;
+        height:4rem;
+    }
+}
+.entrega:hover{
+    @include cardHover();
 }
 footer{
-    @include gradiante();
+    @include gradiante($rojo,$negro);
     .direccion-redes{
         @include centrado();
     }
    
 }
 .direccion-redes{
-
+        color:$grisSuave;
         .col{
             display: flex;
             justify-content: center;
@@ -155,20 +199,30 @@ footer{
 }
 
 @media (max-width:992px){
-    
-    .nav-item{
+    .navbar-nav{
         @include centrado();
-        a  {
-            
-            font-weight: 500;
-            color:$grisSuave;
-            font-size:1.2rem;
-            line-height: 2rem;
-            display:inline;
+    }
+    .nav-item{
+        a{
+            font-size: 1.2rem;
+            transition: 1s;
         }
-        a :hover{
-            border-bottom: 2px solid $amarillo;
+        
+       
+    }
+    .nav-item:hover{
+        background-color: $amarillo;
+        width:10rem;
+       @include centrado();
+    }
+    .carousel-item{
+        h3{
+            text-align: center;
         }
-    
+        p{
+            width:20rem;
+            text-align: center;
+        }
+        
     }
 }
