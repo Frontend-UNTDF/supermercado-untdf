@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,kBAAkB;AAClB;;;;;;MAMM",
-    "sources": [
-        "fonts.sass"
-    ],
-    "names": [],
-    "file": "fonts.css"
-}
+{"version":3,"sources":["fonts.sass"],"names":[],"mappings":"AAAA,iBAAA;AACA;;;;;;MAAA","file":"fonts.css"}
