@@ -4,7 +4,7 @@
 #E61717 rojo*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar-toggler-icon {
@@ -12,21 +12,27 @@
 }
 
 nav {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#E61717), to(#000000));
   background-image: linear-gradient(to bottom right, #E61717, #000000);
 }
+
 nav .nav-item {
   margin-right: 0.5rem;
 }
+
 nav .nav-item a {
   width: 6rem;
   font-weight: 500;
   color: #E8E4E3;
   text-align: center;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 nav .nav-item a:hover {
   background-color: #FFC600;
 }
+
 nav .logo {
   margin-left: 2rem;
 }
@@ -34,18 +40,27 @@ nav .logo {
 .banner {
   height: 50vh;
 }
+
 .banner .banner-wrapper {
-  background-color: rgb(158, 158, 158);
+  background-color: #9e9e9e;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
 }
+
 .banner .banner-wrapper .banner-texto h3 {
   font-weight: 700;
   font-size: 2rem;
 }
+
 .banner .banner-wrapper .banner-texto p {
   font-weight: 200;
 }
@@ -59,23 +74,37 @@ nav .logo {
 }
 
 .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1b1919;
   min-width: 12rem;
   width: 10rem;
   height: 12rem;
   margin-top: 0.5rem;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
 .card img {
   margin: 10px 0px;
   width: 8rem;
@@ -84,25 +113,64 @@ nav .logo {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .card p {
   margin: 0px;
 }
+
 .card button {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card .footer-card {
+  background-color: #E8E4E3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: Darklgray;
+}
+
+.card .footer-card:hover button {
+  background-color: green;
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .card-producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
-  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   margin-bottom: 20px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
   overflow: hidden;
 }
+
 .card-producto img {
   margin: 10px 0px;
   width: 16rem;
@@ -110,16 +178,24 @@ nav .logo {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .card-producto p {
   margin: 0px;
   text-align: center;
 }
+
 .card-producto button {
   margin-bottom: 2rem;
 }
 
+.card-producto .card-prod-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .card-producto:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .anuncio {
@@ -127,23 +203,37 @@ nav .logo {
   height: 25px;
   width: 100%;
   background-color: #000000;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 2.5rem;
   left: -3.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: Darklgray;
 }
+
 .anuncio p {
   color: #E8E4E3;
   font-size: 12px;
 }
 
-.container h4 {
+.container h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #666060;
 }
 
@@ -154,13 +244,16 @@ nav .logo {
 
 .descuento:hover {
   border-radius: 10px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .decuento-oferta-entrega {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20pxrgb 0, 0, 0, 0.1;
+          box-shadow: 0px 0px 20pxrgb 0, 0, 0, 0.1;
   border-radius: 20px;
 }
+
 .decuento-oferta-entrega img {
   width: 3rem;
   height: 3rem;
@@ -168,7 +261,8 @@ nav .logo {
 
 .decuento-oferta-entrega:hover {
   border-radius: 10px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .entrega img {
@@ -178,55 +272,63 @@ nav .logo {
 
 .entrega:hover {
   border-radius: 10px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#E61717), to(#000000));
   background-image: linear-gradient(to bottom right, #E61717, #000000);
 }
-footer .direccion-redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: Darklgray;
-}
 
-.direccion-redes {
+footer .direccion-redes .contenido {
+  width: 50%;
+  text-align: left;
   color: #E8E4E3;
 }
-.direccion-redes .col {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.direccion-redes h5 {
+
+footer .direccion-redes .contenido h5 {
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
-.direccion-redes p {
+
+footer .direccion-redes .contenido p {
   margin-bottom: 0.2rem;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
 }
 
 @media (max-width: 992px) {
   .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: Darklgray;
   }
   .nav-item a {
     font-size: 1.2rem;
+    -webkit-transition: 1s;
     transition: 1s;
   }
   .nav-item:hover {
     background-color: #FFC600;
     width: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: Darklgray;
   }
   .carousel-item h3 {
@@ -236,4 +338,5 @@ footer .direccion-redes {
     width: 20rem;
     text-align: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
