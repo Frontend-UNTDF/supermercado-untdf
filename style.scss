@@ -2,8 +2,8 @@
 #000000 negro
 #E8E4E3 gris suave
 #E61717 rojo*/
-
 @import 'variables';
+
 // @import './fonts/fonts';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap');
 
@@ -74,12 +74,14 @@ nav{
  height:2rem; 
 }
 
-    .promos{
+    .header-producto{
         margin-top:20px;
-    }
-   
-    
+            h3{
+                @include centrado($grisFuerte);
+                font-family: Inter
 
+            }
+        }
 
 .card-container{
    @include centrado();
@@ -136,6 +138,7 @@ nav{
         transition:0.2s;
         position: relative;
         overflow:hidden;
+        background-color: green;
             img{
                 margin:10px 0px;
                 width: 16rem;
@@ -153,8 +156,15 @@ nav{
             }
             .card-prod-img{
                 width:100%;
-                // background-color: $amarillo; //pasar o conseguir las imagenes a png
+                background-color: $grisSuave; //pasar o conseguir las imagenes a png
                 margin-bottom:1rem;
+            }
+            .card-prod-btn{
+                // button{
+                //     color:$negro;
+                //     background-color: $rojo;
+                // }
+                
             }
 }  
 .card-producto:hover{
@@ -186,7 +196,7 @@ nav{
 
 
 .descuento{
-    
+    box-shadow: 0px 0px 20pxrgb(0,0,0,0.5);
     img{
         width:4rem;
         height:4rem;
@@ -197,8 +207,9 @@ nav{
     @include cardHover();
 }
 .decuento-oferta-entrega{
-    box-shadow: 0px 0px 20pxrgb(0,0,0,0.1);
-    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    
     img{
         width:3rem;
         height:3rem;
@@ -213,9 +224,18 @@ nav{
         height:4rem;
     }
 }
-.entrega:hover{
-    @include cardHover();
+.wrapper-contact{
+    background-color: $grisSuave;
+    display: flex;
+    justify-content: center;
+    h3{
+        font-size: 2rem;
+    }
+    
 }
+
+
+
 footer{
     @include gradiante($rojo,$negro);
   
